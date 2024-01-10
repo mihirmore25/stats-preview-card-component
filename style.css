@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Inter", "Lexend Deca", sans-serif;
+}
+
+.wrapper {
+    /* width: 100%; */
+    min-height: 100dvh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 300px;
+    width: 750px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.stats {
+    height: auto;
+    width: 50%;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats > h2 > span {
+    color: hsl(277, 64%, 61%);
+}
+
+.stats > h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.stats > p {
+    line-height: 20px;
+    margin-top: 20px;
+    margin-right: 55px;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%, 0.75);
+}
+
+.statNums {
+    list-style-type: none;
+    padding: 40px 40px 40px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.statNums > li {
+    margin-right: 40px;
+}
+
+.statNums > li > .nums {
+    font-family: "Lexa Deca", sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+
+.statNums > li > .names {
+    margin-top: 5px;
+    font-family: "Lexa Deca", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 8px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+/* .statNums > ul {
+    margin-top: 30px;
+    margin-right: 60px;
+    width: 60px;
+    font-family: "Lexa Deca", sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+
+.statNames {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.statNames > p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+    width: 60px;
+    font-family: "Lexa Deca", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 8px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+} */
+
+.image_wrapper {
+    background-color: hsl(277, 64%, 61%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.image {
+    height: auto;
+    width: 50%;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+}
+
+.image > img {
+    height: 100%;
+    width: auto;
+}
+
+@media only screen and (width <= 850px) {
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 65%;
+        margin: 20px;
+    }
+
+    .image_wrapper {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .image {
+        height: auto;
+        width: 100%;
+    }
+
+    .image > img {
+        height: auto;
+        width: 100%;
+        vertical-align: bottom;
+    }
+
+    .stats {
+        width: auto;
+        text-align: center;
+        /* padding: 40px; */
+    }
+
+    .stats > p {
+        margin-right: 0px;
+    }
+
+    .statNums {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .statNums > li {
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+
+    .statNums > li > .nums {
+        font-family: "Lexa Deca", sans-serif;
+        font-size: large;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+    }
+
+    .statNums > li > .names {
+        margin-top: 5px;
+        font-family: "Lexa Deca", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 9px;
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+}
