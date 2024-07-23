@@ -19,17 +19,18 @@
 }
 
 .card {
-    height: 300px;
-    width: 750px;
+    height: 320px;
+    width: 780px;
     background-color: hsl(244, 38%, 16%);
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     justify-content: flex-start;
 }
 
 .stats {
     height: auto;
-    width: 50%;
+    width: auto;
+    /* width: 50%; */
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -41,22 +42,23 @@
 
 .stats > h2 {
     color: hsl(0, 0%, 100%);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 
 .stats > p {
     line-height: 20px;
     margin-top: 20px;
-    margin-right: 55px;
+    margin-right: 6px;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 300;
     color: hsl(0, 0%, 100%, 0.75);
 }
 
 .statNums {
     list-style-type: none;
-    padding: 40px 40px 40px 0px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
